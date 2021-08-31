@@ -1,0 +1,103 @@
+@media screen and (max-width:768px){
+    .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sb-box-left {
+    width: 20%;
+    display: none;
+}
+.sb-box-right {
+    width: 100%;
+    padding-left:0px;
+}
+header {
+    width: 100%;
+    position: relative;
+    padding: 10px 0px;
+    border-bottom: 1px solid 
+    #ddd;
+}
+.top-header {
+    background:     #ee2a24;
+    padding: 5px 0px;
+    display: none;
+}
+.count {
+    background:#d41a21;
+border-radius: 50px;
+color:#fff;
+    font-size: 11px;
+    height: 18px;
+    padding: 0px 2px 2px;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 18px;
+    z-index: 999;
+    text-align: center;
+    font-weight: bold;
+
+}
+.side-menu-icon{
+position: absolute;
+top: 5px;
+left: 15px;
+display:block;
+}
+.side-menu-icon img{
+width:20px;
+}
+.logo img {
+    width: 100%;
+    margin-left: 35px;
+}
+.header-left {
+    float: right;
+    margin-top: 5px;
+}
+.hl-cont {
+    position: relative;
+    padding-left: 10px;
+    display: none;
+}
+.res-search{
+    display:none;
+}
+.pls-left {
+    width: 20%;
+    display: none;
+}
+.pls-right {
+    width: 100%;
+    padding-left: 0;
+}
+.short-by-section{
+    display:none;
+}
+.order-box .ob-order-info {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border-right: 1px dashed #e3e3e3;
+    padding: 15px;
+    float: left;
+}
+.order-box .ob-order-details {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 30px 25px;
+    text-align: center;
+    float: right;
+        background: #f5f5f5;
+}
+.order-box .ob-order-info .bti-img {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+}

@@ -1,0 +1,46 @@
+# Uncomment the following to prevent the httpoxy vulnerability
+# See: https://httpoxy.org/
+#<IfModule mod_headers.c>
+#    RequestHeader unset Proxy
+#</IfModule>
+<IfModule pagespeed_module>
+ModPagespeed off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  #
+  # stuff to let through (ignore)
+  RewriteCond %{REQUEST_URI} "/invoice/" [OR]
+  RewriteCond %{REQUEST_URI} "/invoice/"
+  RewriteRule (.*) $1 [L]
+  #</IfModule>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^(\.well-known/.*)$ $1 [L]
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+ 
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+ 
+# php -- END cPanel-generated handler, do not edit
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:unnatiplus.com
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:unnatiplus.com
+
+
+
+
+
